@@ -1,4 +1,0 @@
-Port Scan Feature List:
-
-TCP Scanning:
-Series of tcp connect() requests from one host to many ports on another host that are immediately closed after being opened
