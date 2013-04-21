@@ -1,8 +1,8 @@
 Abstract
--------------
+===========
 
 Introduction
------------------
+==============
 1.  Why are these systems important
 
 2.  Why are we writing this paper
@@ -11,7 +11,7 @@ Introduction
     * Write to a less knowledgeable audience, treating this as an introduction to
         the field of study
 
-3. Lay out the structure of the paper
+3. Lay out the structure of the paper, including each type of attack
     
 
 Body
@@ -32,7 +32,7 @@ Breakdown of Attacks and Detection
 2.  Denial of Service
     * Distributed Denial of Service (DDos) 
 
-4.  Forensic Network Analysis (R2L) <!-- TODO: Rename this -->
+4. Remote to Local 
 
 Conclusion
 ------------
