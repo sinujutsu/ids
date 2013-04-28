@@ -28,11 +28,11 @@ Breakdown of Attacks and Detection
     * Port Scans
 
 2.  Privilege Escalation
+    * Remote to User
+    * User to Root
     
 2.  Denial of Service
     * Distributed Denial of Service (DDos) 
-
-4. Remote to Local 
 
 Conclusion
 ------------
