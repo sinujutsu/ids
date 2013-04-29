@@ -22,6 +22,8 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
     * Network based
         * Analyse behavior of a network by monitoring network loads and packet headers
         * Adv:
+            - Network based signature detection systems can easily cover an entire network
+            - Easy to retro fit onto an existing network
             - Little impact on network performance
             - Easy to secure from attack
             - Do not work well in switch based networks, specifically one implemented with switched that lack monitoring ports because all traffic can not be mirrored to the sensors
@@ -52,8 +54,28 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
 2.  Event Analysis
     * Signature based
         * The most prominent form of detections used in most IDS''s today
-        * 
+        * They work by looking for predefined patterns in audit data, which means that there must be explicit rules defined for each type of attack.
+        * SNORT is a prominent example of a signature based detection system
+        * The more explicitly a rule is defined the less false positives it will generate, but the less likely it will be at detecting even slight variations from known attacks.
+            * Adv:
+                - Can be effective without generating an overwhelming number of false alarms
+            * Dis:
+                - Are not very good at detecting novel attacks, or even variations from previously seen attacks
     * Anomaly based
+        * These systems work by building up a profile of "normal" behavior and detect variations from that profile within a system
+        * Adv:
+            - Able to detect novel attacks
+        * Dis:
+            - Typically produce large numbers of false positives
+            - Require extensive and well made training data sets, which historically are very hard to produce
+
+3. Limitations of IDS''s 
+    * Scalability problems: 
+        - There is a large human component that it takes to keep an IDS in operation, the larger a system is -> the more sensors it needs -> the more data generated that needs to be evaluated -> more personnel and man hours needed for affective analysis
+    * Usually generate a high number of false positives that require an IT analyst to be sorted out
+    * Most IDS''s are not insulated from attack themselves
+    * Must be maintained by skilled personnel to achieve maximum effectiveness
+    * New attacks are generated quicker than IDS''s that can detect them
 
 Breakdown of Attacks and Detection
 ------------------------------------
