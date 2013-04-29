@@ -20,6 +20,8 @@ Intrusion Detection Systems
 -----------------------------
 1.  Audit Systems
     * Host based
+        * Adv:
+            - 
     * Network based
     * Application Based
 
@@ -29,15 +31,17 @@ Intrusion Detection Systems
 
 Breakdown of Attacks and Detection
 ------------------------------------
+(This idea here is to use these major categories of attacks to highlight how intrusion dtection systems work)
+
 1.  Probes
     * Port Scans
 
 2.  Privilege Escalation
+    * Remote to User
+    * User to Root
     
 3.  Denial of Service
     * Distributed Denial of Service (DDos) 
-
-4. Remote to Local 
 
 Conclusion
 ------------
