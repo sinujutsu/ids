@@ -1,8 +1,6 @@
-Abstract
-===========
+###Abstract
 
-Introduction
-==============
+###Introduction
 1.  Why are these systems important
 
 2.  Why are we writing this paper
@@ -12,10 +10,11 @@ Introduction
         the field of study
 
 3. Lay out the structure of the paper, including each type of attack
+    * Why did we choose this taxonomy?
+        - It was how the DARPA data set was broken up, and seemed like the highest level description that covered all cases
+        - <!-- JAKE, THIS IS WHERE YOU WILL TALK ABOUT THE DECISION TO MERGE YOUR TWO TOPICS --!>
     
-
-Body
-=======
+###Body
 Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
 -----------------------------
 1.  Audit Systems
@@ -83,6 +82,11 @@ Breakdown of Attacks and Detection
 
 1.  Probes
     * Port Scans
+        - A port scan is a method of determining what services are running on a host or network by observing the responses from various ports [Bhuyan, Bhattacharyya, Kalitan]
+        - Basically a port scan consists of sending a message to every port on a host machine and listening for a response
+        - Analogy to walking a neighborhood looking for open doors
+        - There are 65,536 defined ports on a given machine [Bhuyan, Bhattacharyya, Kalitan]
+        -  
 
 2.  Privilege Escalation
     * Remote to User
@@ -96,8 +100,19 @@ Conclusion
     What the hell have we learned??
     Cats!
     
+    * Talk about data sets
+        * The design of a training data set is paramount in IDS performance, mainly anomaly based systems, but that is where this field is trending
+        * DARPA data set <!-- DOES THIS BELONG HERE? --!>
+            - One of the most prolific training sets out there
+            - Highly criticized [Brugger, Terry; Chow, Jedediah]
+                * Outdated
+                * Did not adequately represent real network traffic [McHugh && Malhony; Chan]
+                * <!-- MORE TO FOLLOW FROM BRUGGER; CHOW --!>
+
     * Most probing activity can be detected using signature based methods
         * BUT WHAT SHOULD ONE DO WITH THIS INFORMATION?
+            - Some people ignore it
+            - Others block those IP addrs
         
     * A multi-tiered system is the most effective
         * Network based sensors configured for detecting probing activity
