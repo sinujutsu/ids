@@ -59,9 +59,13 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
             * Adv:
                 - Can be effective without generating an overwhelming number of false alarms
             * Dis:
-                - Are not very good at detecting novel attacks, or even variations from previously seen attacks
+                - Are not very good at detecting novel attacks, or even variations from previously seen attacks, so called 'neighboring' attacks [Labib; Vemuri]
     * Anomaly based
         * These systems work by building up a profile of "normal" behavior and detect variations from that profile within a system
+        * Usually consist of three phases [Alenizi; Reed]
+            - Parameterization: The significant parameters of a system are defined
+            - Training: The IDS forms a profile of "normal" behavior
+            - Detection: Activity is compared to the training profile and flagged as either normal or abnormal
         * Adv:
             - Able to detect novel attacks
         * Dis:
@@ -98,13 +102,17 @@ Breakdown of Attacks and Detection
         - 
     
 3.  Denial of Service
+    * Multiple authors argue that signature based detection methods are ineffective for this type of attack [Peng(16), Kompella(21), Cheng(22) all from Alenzi;Reed]
+        - However [Alenzi, Reed] argue that signature based methods can be used to rule out simple DoS attacks such as TCP mixed flags attack.
+    * General DoS IDS Classification [Alenzi; Reed]
+        - IP-Attribute based lassification [Yongua 17 from Alenzi;Reed]
+            * Packet header parameters are analysed such as source IP, Port and TTL
+        - Traffic volume based [" "]
+            * Ex''s include MULTOPS, SYN, and other satistical algorithms
     * Distributed Denial of Service (DDos) 
 
 Conclusion
 ------------
-    What the hell have we learned??
-    Cats!
-    
     * Talk about data sets
         * The design of a training data set is paramount in IDS performance, mainly anomaly based systems, but that is where this field is trending
         * DARPA data set <!-- DOES THIS BELONG HERE? --!>
@@ -124,5 +132,8 @@ Conclusion
         * host based sensors for privilege escalation attacks
         * Needs to be used in conjunction with a file wall/defence system
 
+    * Open Problems in the field
+        * Generating meaningful, labeled, and representative data sets for training
+        * Designing systems that can detect novel attacks while also producing few false alarms
 
 

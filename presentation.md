@@ -5,7 +5,7 @@ A place to put our thoughts about the presentation
 
 Awesomeness
 -------------
-* Theme: ???
+* Theme: light background, dark text
 * Color scheme: tech light
 * Cats: Yes, lots, everyone on the internet loves cats
 
