@@ -6,14 +6,14 @@ A place to put our thoughts about the presentation
 Awesomeness
 -------------
 * Theme: ???
-* Color scheme: ???
+* Color scheme: tech light
 * Cats: Yes, lots, everyone on the internet loves cats
 
 Differences between this and paper
 -----------------------------------
 * Presentation should have a TLDR slide at the end of every section
 * Sections we need that aren''t necesarily in paper
-    * The story of our clugefest
+    * The story of our klugefest        -- Jake can do this
     * What we learned
     * Future work??
     * Can tell the UPS story with SNORT
