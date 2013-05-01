@@ -90,6 +90,10 @@ Breakdown of Attacks and Detection
         - Basically a port scan consists of sending a message to every port on a host machine and listening for a response
         - Analogy to walking a neighborhood looking for open doors
         - There are 65,536 defined ports on a given machine [Bhuyan, Bhattacharyya, Kalitan]
+    * Information organized by source
+        - ### Staniford, Haugland and McAlerney
+        - ### Bhuyan, Bhattacharyya, Kalitan
+        - ### Sources from Bhuyan, Bhattacharyya, Kalitan
 
 2.  Privilege Escalation
     * Remote to User
@@ -99,20 +103,21 @@ Breakdown of Attacks and Detection
     * User to Root
         - A user to root attack is when an attacker enables themselves to gain privileges greater than what they were assigned by an administrator
         - These attacks often start with an attacker already having local user access to a system, but can be done remotely and skip the step of gaining a local user account
-        - 
     
 3.  Denial of Service
     * Multiple authors argue that signature based detection methods are ineffective for this type of attack [Peng(16), Kompella(21), Cheng(22) all from Alenzi;Reed]
         - However [Alenzi, Reed] argue that signature based methods can be used to rule out simple DoS attacks such as TCP mixed flags attack.
     * General DoS IDS Classification [Alenzi; Reed]
-        - IP-Attribute based lassification [Yongua 17 from Alenzi;Reed]
+        - IP-Attribute based lassification [Yongua 17 FROM Alenzi;Reed]
             * Packet header parameters are analysed such as source IP, Port and TTL
         - Traffic volume based [" "]
             * Ex''s include MULTOPS, SYN, and other satistical algorithms
-    * Distributed Denial of Service (DDos) 
-
+    * Information organized by source
+        - ### Labib and Venuri
+        - ### Sources from Alenezi and Reed
+        - ### Sourced from Labib and Venuri, LOOK IN RELATED WORK
 Conclusion
-------------
+----------
     * Talk about data sets
         * The design of a training data set is paramount in IDS performance, mainly anomaly based systems, but that is where this field is trending
         * DARPA data set <!-- DOES THIS BELONG HERE? --!>
