@@ -1,6 +1,6 @@
-###Abstract
+#Abstract
 
-###Introduction
+#Introduction
 1.  Why are these systems important
 
 2.  Why are we writing this paper
@@ -14,7 +14,7 @@
         - It was how the DARPA data set was broken up, and seemed like the highest level description that covered all cases
         - <!-- JAKE, THIS IS WHERE YOU WILL TALK ABOUT THE DECISION TO MERGE YOUR TWO TOPICS --!>
     
-###Body
+#Body
 Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
 -----------------------------
 1.  Audit Systems
@@ -86,7 +86,6 @@ Breakdown of Attacks and Detection
         - Basically a port scan consists of sending a message to every port on a host machine and listening for a response
         - Analogy to walking a neighborhood looking for open doors
         - There are 65,536 defined ports on a given machine [Bhuyan, Bhattacharyya, Kalitan]
-        -  
 
 2.  Privilege Escalation
     * Remote to User
