@@ -89,7 +89,13 @@ Breakdown of Attacks and Detection
 
 2.  Privilege Escalation
     * Remote to User
+        - A remote to user attack is simply an attacker gaining access to a system equivalent to what a local user would be allowed
+        - Such attacks can take a staggering array of forms, from obtaining user authentication information without the knowledge of said user, to exploiting application vulnerabilities
+        - Note that such an attack is not necessarily malicious, as the breach occuring at all, regardless of any malicious activity performed by the user, categorizes this as a "remote to local" attack
     * User to Root
+        - A user to root attack is when an attacker enables themselves to gain privileges greater than what they were assigned by an administrator
+        - These attacks often start with an attacker already having local user access to a system, but can be done remotely and skip the step of gaining a local user account
+        - 
     
 3.  Denial of Service
     * Distributed Denial of Service (DDos) 
