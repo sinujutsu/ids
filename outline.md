@@ -91,9 +91,9 @@ Breakdown of Attacks and Detection
         - Analogy to walking a neighborhood looking for open doors
         - There are 65,536 defined ports on a given machine [Bhuyan, Bhattacharyya, Kalitan]
     * Information organized by source
-        - ### Staniford, Haugland and McAlerney
-        - ### Bhuyan, Bhattacharyya, Kalitan
-        - ### Sources from Bhuyan, Bhattacharyya, Kalitan
+        - ###Staniford, Haugland and McAlerney
+        - ###Bhuyan, Bhattacharyya, Kalitan
+        - ###Sources from Bhuyan, Bhattacharyya, Kalitan
 
 2.  Privilege Escalation
     * Remote to User
