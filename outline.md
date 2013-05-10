@@ -12,7 +12,9 @@
 3. Lay out the structure of the paper, including each type of attack
     * Why did we choose this taxonomy?
         - It was how the DARPA data set was broken up, and seemed like the highest level description that covered all cases
-        - <!-- JAKE, THIS IS WHERE YOU WILL TALK ABOUT THE DECISION TO MERGE YOUR TWO TOPICS --!>
+        - There was one adjustment we made to the DARPA data set: user to root and remote to user seemed like they were BOTH
+	  forms of privilege escalation (remote to user is going from zero access to user access, an escalation, after all)
+	  and we decided to group them both under that one heading.
     
 #Body
 Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
@@ -71,6 +73,8 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
         * Dis:
             - Typically produce large numbers of false positives
             - Require extensive and well made training data sets, which historically are very hard to produce
+            - Allows the potential for an attacker to "poison" a training set, which might produce a system thinks
+	      a certain segments of attacks are "normal behavior"
 
 3. Limitations of IDS''s 
     * Scalability problems: 
@@ -95,8 +99,8 @@ Breakdown of Attacks and Detection
         - ###Bhuyan, Bhattacharyya, Kalitan
         - ###Sources from Bhuyan, Bhattacharyya, Kalitan
 
-2.  Privilege Escalation
-    * Remote to User
+2.  Privilege Escalation --###Primarily all from MIT/DARPA article thing
+    * Remote to User 
         - A remote to user attack is simply an attacker gaining access to a system equivalent to what a local user would be allowed
         - Such attacks can take a staggering array of forms, from obtaining user authentication information without the knowledge of said user, to exploiting application vulnerabilities
         - Note that such an attack is not necessarily malicious, as the breach occuring at all, regardless of any malicious activity performed by the user, categorizes this as a "remote to local" attack
@@ -140,5 +144,6 @@ Conclusion
     * Open Problems in the field
         * Generating meaningful, labeled, and representative data sets for training
         * Designing systems that can detect novel attacks while also producing few false alarms
+        * Categorization/taxonomy for attack vectors, attack types, could prove incredibly useful
 
 
