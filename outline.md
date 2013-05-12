@@ -12,9 +12,7 @@
 3. Lay out the structure of the paper, including each type of attack
     * Why did we choose this taxonomy?
         - It was how the DARPA data set was broken up, and seemed like the highest level description that covered all cases
-        - There was one adjustment we made to the DARPA data set: user to root and remote to user seemed like they were BOTH
-	  forms of privilege escalation (remote to user is going from zero access to user access, an escalation, after all)
-	  and we decided to group them both under that one heading.
+        - <!-- JAKE, THIS IS WHERE YOU WILL TALK ABOUT THE DECISION TO MERGE YOUR TWO TOPICS --!>
     
 #Body
 Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
@@ -27,11 +25,11 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
             - Easy to retro fit onto an existing network
             - Little impact on network performance
             - Easy to secure from attack
-            - Do not work well in switch based networks, specifically one implemented with switched that lack monitoring ports because all traffic can not be mirrored to the sensors
-            - Use is becoming more limited as the use of encrypted network channels is becoming more popular
         * Dis:
             - Performance is generally inversely proportional to traffic load i.e. may fail to detect attacks during high periods of traffic
             - Increases in speed usually lead to decreases in accuracy and these systems need to be fast
+            - Do not work well in switch based networks, specifically one implemented with switched that lack monitoring ports because all traffic can not be mirrored to the sensors
+            - Use is becoming more limited as the use of encrypted network channels is becoming more popular
     * Host based
         * Analyse behavior of a particular host machine by monitoring system logs
         * Adv:
@@ -73,8 +71,6 @@ Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
         * Dis:
             - Typically produce large numbers of false positives
             - Require extensive and well made training data sets, which historically are very hard to produce
-            - Allows the potential for an attacker to "poison" a training set, which might produce a system thinks
-	      a certain segments of attacks are "normal behavior"
 
 3. Limitations of IDS''s 
     * Scalability problems: 
@@ -95,12 +91,12 @@ Breakdown of Attacks and Detection
         - Analogy to walking a neighborhood looking for open doors
         - There are 65,536 defined ports on a given machine [Bhuyan, Bhattacharyya, Kalitan]
     * Information organized by source
-        ###-Staniford, Haugland and McAlerney
+        - ###Staniford, Haugland and McAlerney
         - ###Bhuyan, Bhattacharyya, Kalitan
         - ###Sources from Bhuyan, Bhattacharyya, Kalitan
 
-2.  Privilege Escalation --###Primarily all from MIT/DARPA article thing
-    * Remote to User 
+2.  Privilege Escalation
+    * Remote to User
         - A remote to user attack is simply an attacker gaining access to a system equivalent to what a local user would be allowed
         - Such attacks can take a staggering array of forms, from obtaining user authentication information without the knowledge of said user, to exploiting application vulnerabilities
         - Note that such an attack is not necessarily malicious, as the breach occuring at all, regardless of any malicious activity performed by the user, categorizes this as a "remote to local" attack
@@ -118,6 +114,7 @@ Breakdown of Attacks and Detection
             * Ex''s include MULTOPS, SYN, and other satistical algorithms
     * Information organized by source
         - ### Labib and Venuri
+            * They use multivariate statistical approaches to detect DoS and Netptune attacks. More specifically, they use Principle Component Analysis to reduce the multidementional space represented by network feature vectors for real time analysis. They are able to detect 100% of attacks, however, the data set they use has been highly criticized and is far outdated. 
         - ### Sources from Alenezi and Reed
         - ### Sourced from Labib and Venuri, LOOK IN RELATED WORK
 Conclusion
@@ -144,6 +141,5 @@ Conclusion
     * Open Problems in the field
         * Generating meaningful, labeled, and representative data sets for training
         * Designing systems that can detect novel attacks while also producing few false alarms
-        * Categorization/taxonomy for attack vectors, attack types, could prove incredibly useful
 
 
