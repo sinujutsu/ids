@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Jamroz.Furhman.FinalPaper.aux
+The style file: abbrv.bst
+Database file #1: allSources.bib
+Warning--I didn't find a database entry for "Alenzi"
+Warning--to sort, need author or key in 
+Warning--there's a number but no volume in Alenezi2012
+Warning--empty journal in Eddy2007
+Warning--there's a number but no volume in Gandhi2008
+Warning--empty journal in Gordon2004
+Warning--empty journal in Hsu2006
+Warning--empty journal in JanaSuman;Kasera
+Warning--empty year in JanaSuman;Kasera
+Warning--empty journal in McDowell2013
+Warning--there's a number but no volume in Specht2004
+You've used 35 entries,
+            2118 wiz_defined-function locations,
+            710 strings with 9856 characters,
+and the built_in function-call counts, 10728 in all, are:
+= -- 1071
+> -- 488
+< -- 12
++ -- 191
+- -- 156
+* -- 661
+:= -- 1797
+add.period$ -- 103
+call.type$ -- 35
+change.case$ -- 183
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 444
+empty$ -- 796
+format.name$ -- 156
+if$ -- 2250
+int.to.chr$ -- 0
+int.to.str$ -- 35
+missing$ -- 32
+newline$ -- 175
+num.names$ -- 68
+pop$ -- 195
+preamble$ -- 1
+purify$ -- 148
+quote$ -- 0
+skip$ -- 356
+stack$ -- 0
+substring$ -- 554
+swap$ -- 109
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 140
+warning$ -- 10
+while$ -- 107
+width$ -- 37
+write$ -- 361
+(There were 11 warnings)

@@ -1,0 +1,202 @@
+\begin{thebibliography}{10}
+
+\bibitem{}
+{802.11 Denial-of-Service Attacks: Vulnerabilities and Practical solutions}.
+
+\bibitem{Alenezi2012}
+M.~Alenezi and M.~Reed.
+\newblock {Methodologies for detecting DoS/DDoS attacks against network
+  servers}.
+\newblock {\em ICSNC 2012: The Seventh International Conference on Systems and
+  Networks Communications}, (c):92--98, 2012.
+
+\bibitem{Alexander2012}
+S.~Alexander.
+\newblock {Trust engineering: rejecting the tyranny of the weakest link}.
+\newblock {\em Proceedings of the 28th Annual Computer Security \ldots}, pages
+  145--148, 2012.
+
+\bibitem{Bernaschi2000}
+M.~Bernaschi, E.~Gabrielli, and L.~Mancini.
+\newblock {Operating system enhancements to prevent the misuse of system
+  calls}.
+\newblock {\em \ldots of the 7th ACM conference on \ldots}, 2000.
+
+\bibitem{Bhuyan2011}
+M.~H. Bhuyan, D.~K. Bhattacharyya, and J.~K. Kalita.
+\newblock {Surveying Port Scans and Their Detection Methodologies}.
+\newblock {\em The Computer Journal}, 54(10):1565--1581, Apr. 2011.
+
+\bibitem{Brugger2007}
+S.~Brugger and J.~Chow.
+\newblock {An assessment of the DARPA IDS Evaluation Dataset using Snort}.
+\newblock {\em UCDAVIS department of Computer Science}, pages 1--19, 2007.
+
+\bibitem{Carlini2012}
+N.~Carlini, A.~Felt, and D.~Wagner.
+\newblock {An evaluation of the google chrome extension security architecture}.
+\newblock {\em \ldots the 21st USENIX Conference on Security}, 2012.
+
+\bibitem{Dalton2009}
+M.~Dalton, C.~Kozyrakis, and N.~Zeldovich.
+\newblock {Nemesis: preventing authentication \& access control vulnerabilities
+  in web applications}.
+\newblock {\em \ldots of the 18th conference on USENIX \ldots}, 2009.
+
+\bibitem{Djemaiel2007}
+Y.~Djemaiel and N.~Boudriga.
+\newblock {A global marking scheme for tracing cyber attacks}.
+\newblock {\em Proceedings of the 2007 ACM symposium on Applied computing - SAC
+  '07}, page 170, 2007.
+
+\bibitem{Eddy2007}
+W.~Eddy.
+\newblock {TCP SYN flooding attacks and common mitigations}.
+\newblock 2007.
+
+\bibitem{Gandhi2008}
+M.~Gandhi and S.~Srivatsa.
+\newblock {Detecting and preventing attacks using network intrusion detection
+  systems}.
+\newblock {\em International Journal of Computer Science and \ldots},
+  (2):49--60, 2008.
+
+\bibitem{Gordon2004}
+L.~A. Gordon, M.~P. Loeb, W.~Lucyshyn, and R.~Richardson.
+\newblock {COMPUTER CRIME 2004 CSI / FBI Computer Crime and Security Survey}.
+\newblock 2004.
+
+\bibitem{Hansman2005}
+S.~Hansman and R.~Hunt.
+\newblock {A taxonomy of network and computer attacks}.
+\newblock {\em Computers \& Security}, 24(1):31--43, Feb. 2005.
+
+\bibitem{Hsu2006}
+F.-h. Hsu and T.-c. Chiueh.
+\newblock {Scalable Network-based Buffer Overflow Attack}.
+\newblock pages 163--171, 2006.
+
+\bibitem{Hussain2003}
+A.~Hussain, J.~Heidemann, and C.~Papadopoulos.
+\newblock {A framework for classifying denial of service attacks}.
+\newblock In {\em Proceedings of the 2003 conference on Applications,
+  technologies, architectures, and protocols for computer communications -
+  SIGCOMM '03}, page~99, New York, New York, USA, 2003. ACM Press.
+
+\bibitem{JanaSuman;Kasera}
+S.~{Jana, Suman; Kasera}.
+\newblock {On Fast and Accurate Detection of Unauthorized Wireless Access
+  Points Using Clock Skews ∗ Categories and Subject Descriptors}.
+\newblock pages 104--115.
+
+\bibitem{Kirkpatrick2011}
+M.~Kirkpatrick and S.~Kerr.
+\newblock {Enforcing physically restricted access control for remote data}.
+\newblock {\em Proceedings of the first ACM conference on Data \ldots}, pages
+  203--212, 2011.
+
+\bibitem{Kuperman2005}
+B.~Kuperman and C.~Brodley.
+\newblock {Detection and prevention of stack buffer overflow attacks}.
+\newblock {\em Communications of the \ldots}, 48(11), 2005.
+
+\bibitem{Labib2004}
+K.~Labib and V.~Vemuri.
+\newblock {Detecting and visualizing denial-of-service and network probe
+  attacks using principal component analysis}.
+\newblock {\em Proc. SAR}, 2004.
+
+\bibitem{Larson2008}
+U.~Larson and D.~Nilsson.
+\newblock {Securing vehicles against cyber attacks}.
+\newblock {\em \ldots of the 4th annual workshop on Cyber security \ldots},
+  page~1, 2008.
+
+\bibitem{Livshits2005}
+V.~Livshits and M.~Lam.
+\newblock {Finding security vulnerabilities in Java applications with static
+  analysis}.
+\newblock {\em \ldots of the 14th conference on USENIX Security \ldots}, 2005.
+
+\bibitem{McDowell2013}
+M.~McDowell and This.
+\newblock {Security Tip ( ST04 ­ 015 ) Understanding Denial ­ of ­ Service
+  Attacks}.
+\newblock page 2013, 2013.
+
+\bibitem{Moore2006}
+D.~Moore, C.~Shannon, D.~J. Brown, G.~M. Voelker, and S.~Savage.
+\newblock {Inferring Internet denial-of-service activity}.
+\newblock {\em ACM Transactions on Computer Systems}, 24(2):115--139, May 2006.
+
+\bibitem{Newman2006}
+R.~Newman.
+\newblock {Cybercrime, identity theft, and fraud: practicing safe
+  internet-network security threats and vulnerabilities}.
+\newblock {\em \ldots of the 3rd annual conference on Information security
+  \ldots}, 2006.
+
+\bibitem{Nilsson2009}
+D.~K. Nilsson and U.~E. Larson.
+\newblock {Conducting Forensic Investigations of Cyber Attacks on Automobile
+  In-Vehicle Networks}.
+\newblock {\em International Journal of Digital Crime and Forensics},
+  1(2):28--41, 2009.
+
+\bibitem{Richardson2008}
+R.~Richardson and C.~Director.
+\newblock {CSI computer crime and security survey}.
+\newblock {\em Computer Security Institute}, 2008.
+
+\bibitem{Sailer2004}
+R.~Sailer, T.~Jaeger, X.~Zhang, and L.~van Doorn.
+\newblock {Attestation-based policy enforcement for remote access}.
+\newblock {\em Proceedings of the 11th ACM conference on Computer and
+  communications security - CCS '04}, page 308, 2004.
+
+\bibitem{SilenokElena;RoedelChris;Silenok}
+E.~{Silenok, Elena; Roedel, Chris; Silenok}.
+\newblock {Detection and Characterization of Port Scan Attacks Cynthia Bailey
+  Lee Chris Roedel Classification Methodology}.
+
+\bibitem{Specht2004}
+S.~Specht and R.~Lee.
+\newblock {Distributed denial of service: Taxonomies of attacks, tools, and
+  countermeasures}.
+\newblock {\em \ldots on Parallel and Distributed \ldots},
+  (September):543--550, 2004.
+
+\bibitem{Staniford2002}
+S.~Staniford, J.~Hoagland, and J.~McAlerney.
+\newblock {Practical automated detection of stealthy portscans}.
+\newblock {\em Journal of Computer Security}, 10:105--136, 2002.
+
+\bibitem{Stock2013}
+A.~Stock, J.~Williams, and D.~Wichers.
+\newblock {OWASP top 10}.
+\newblock {\em OWASP Foundation, July}, 2013.
+
+\bibitem{Sun2011}
+F.~Sun, L.~Xu, and Z.~Su.
+\newblock {Static detection of access control vulnerabilities in web
+  applications}.
+\newblock {\em Proceedings of the 20th USENIX conference on \ldots}, 2011.
+
+\bibitem{Taylor2006}
+P.~Taylor and P.~Mell.
+\newblock {UNDERSTANDING INTRUSION DETECTION SYSTEMS NEWSLETTER}.
+\newblock Technical Report April 2013, The EDP Audit, Control, ans Security,
+  2006.
+
+\bibitem{Vigna1998}
+G.~Vigna and R.~Kemmerer.
+\newblock {NetSTAT: a network-based intrusion detection approach}.
+\newblock {\em Proceedings 14th Annual Computer Security Applications
+  Conference (Cat. No.98EX217)}, pages 25--34, 1998.
+
+\bibitem{Wagner2001}
+D.~Wagner and R.~Dean.
+\newblock {Intrusion detection via static analysis}.
+\newblock {\em Security and Privacy, 2001. S\&P 2001. \ldots}, 2001.
+
+\end{thebibliography}
