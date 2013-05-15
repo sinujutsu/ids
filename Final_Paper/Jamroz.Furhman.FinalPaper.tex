@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Network Intrusion Detection Proposal}
+\title{Sound the Alarm\\A Survey of Modern Intrusion Detection Methodologies}
 
 \numberofauthors{2} 
 \author{
@@ -43,7 +43,7 @@ Jake Fuhrman
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.5\textwidth]{idsBreakdown.png}
-		\caption{A general breakdown of IDSs by Audit System and Event Analysis. Image taken from ALENZI and REED \cite{Alenzi}} %TODO: NEEDS CITATION
+		\caption{A general breakdown of IDSs by Audit System and Event Analysis. Image taken from \cite{Alenezi2012}}
 		\label{breakdown}
 	\end{figure}
     % Will need some filler intro stuff here
@@ -52,8 +52,15 @@ Jake Fuhrman
     \subsection{Audit Systems}
     	This section will breakdown IDSs by their audit system, which describes the source of the data that they analyse for intrusions. There are three main types of audit systems: \emph{Host-Based}, \emph{Network-Based}, and \emph{Application-Based}.
     	\subsubsection{Host-Based}
+    		Host-Based IDSs (HIDS) are characterised by having detection sensors on each individual machine within a network. These types of systems monitor an individual computer's system logs to detect attacks. HIDSs are able to detect attacks with much more specificity than network-based systems because they are able to monitor individual processes on an particular machine for malicious activity. 
+    		
+    		There are many advantages to using a HIDS. First, and fore most, they are able to detect attacks that network-based sensors cannot, because they are running on the host machine. Next, unlike network-based sensors, they are fully functional within both switched, and encrypted networks because their audit source is independent of network traffic, and they are able to use host resources to decrypt traffic before analysis.
+    		
+    		
     	\subsubsection{Network-Based}
-    		Network-based IDSs (NIDS) are characterised by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These are the most commonly used types of systems today. They have many advantages over a host-based system, mainly that fewer sensors are required to cover the entire network, which also means less installation time and maintenance. These types of systems also have little to no impact on network performance, because they are sensors that traffic is simply routed through. As they are their own independent system residing on the network, they can be set up in such a way that they are invisible to outsiders. This hidden nature also makes them very insulated from attack themselves, which is a large advantage for network administrators. 
+    		Network-based IDSs (NIDS) are characterised by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These types of systems work by monitoring network traffic looking for patterns in flow or analysing packet headers for trends. These are the most commonly used types of systems today. 
+    		
+    		NIDSs have many advantages over a host-based system, mainly that fewer sensors are required to cover the entire network, which also means less installation time and maintenance. These types of systems also have little to no impact on network performance, because they are sensors that traffic is simply routed through. As they are their own independent system residing on the network, they can be set up in such a way that they are invisible to outsiders. This hidden nature also makes them very insulated from attack themselves, which is a large advantage for network administrators. 
     		
     		However, these systems are not without their drawbacks. It has been shown that in periods of high network load, these systems performance drops due to an inability to process all incoming packets. As such, they could fail to detect an attack that was launched during one of these periods. The effectiveness of these types of systems also drops in switched networks, because switches subdivide network traffic such that a NIDS can no longer monitor all traffic on the network because much of it is hidden behind a switches. Finally, NIDSs are are unable to analyse encrypted traffic. This incapability is a major drawback, especially in this day in age, as more and more traffic is being moved to encrypted channels of communication. 		
     	\subsubsection{Application-Based}
@@ -65,7 +72,7 @@ Jake Fuhrman
     		\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.5\textwidth]{signatreVSanomaly.png}
-		\caption{Summary of Event Analysis systems. Image taken from ALENZI and REED} %TODO: NEEDS CITATION
+		\caption{Summary of Event Analysis systems. Image taken from \cite{Alenezi2012}}
 		\label{comparison}
 	\end{figure}
 			
@@ -87,13 +94,15 @@ Jake Fuhrman
 
 \section{Discussion}
     % What would we say here?
+    \subsection{Training Sets}
+    \subsection{Effective Defense}
+    \subsection{Open Problems}
 
 \section{Conclusions}
     % See outline for this bit
 
-\section{References}
-	%I produced all references, we invariably wont use all of them, but this makes it easier to cite things trhoughout the paper. Add the num of the source you use below as you use it, that way we can remove the ones we dont use later
-	% Sources used: 
+	% References-------------------------------
+	%I produced all references, we invariably wont use all of them, but this makes it easier to cite things trhoughout the paper. At the end, we will re-Export the bibTex, to just be what we used by searching through this document for the work 'cite'
 	
 % The following two commands are all you need in the
 % initial runs of your .tex file to
