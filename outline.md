@@ -12,7 +12,8 @@
 3. Lay out the structure of the paper, including each type of attack
     * Why did we choose this taxonomy?
         - It was how the DARPA data set was broken up, and seemed like the highest level description that covered all cases
-        - <!-- JAKE, THIS IS WHERE YOU WILL TALK ABOUT THE DECISION TO MERGE YOUR TWO TOPICS --!>
+        - In the case of privilege escalation attacks, user to root was originally the only attack in that category, but 
+	  remote to local (zero user access to local user access) seems like privilege escalation as well, so we grouped them together.
     
 #Body
 Intrusion Detection Systems [Mell,Peter @ EDPACS unless otherwise stated]
@@ -95,7 +96,7 @@ Breakdown of Attacks and Detection
         - ###Bhuyan, Bhattacharyya, Kalitan
         - ###Sources from Bhuyan, Bhattacharyya, Kalitan
 
-2.  Privilege Escalation
+2.  Privilege Escalation - ###Source is MIT Darpa detection web page thing
     * Remote to User
         - A remote to user attack is simply an attacker gaining access to a system equivalent to what a local user would be allowed
         - Such attacks can take a staggering array of forms, from obtaining user authentication information without the knowledge of said user, to exploiting application vulnerabilities
