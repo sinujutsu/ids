@@ -73,11 +73,11 @@ Jacob Fuhrman
 	    	Signature detection systems operate on an extremely basic principle: attacks that have been detected before should be recognizable after initially being discovered, given that whatever unique feature(s) that identify them are written down and matched against. 
     	\subsubsection{Anomaly Detection}
     		Anomaly detecting systems work by constructing a system profile of "normal" behavior, and use that profile to then detect abnormal behavior. The idea is that attacks are a subset of abnormal behavior, which will allow these types of systems to detect them. Most of these systems use some complex statistical analysis to determine when activity differs from the system profile. The major draw to these types of systems is that, unlike signature detection methods, these systems can detect not only variations on known attacks, but completely novel attacks as well. The problem with this functionality is that it is predicated on having an effective system profile, which is by no means trivial to produce. They require extensive training sets to learn from, of which few exist. In practice, these types of systems produce large numbers of false positives that require manual inspection to effectively classify as an attack or not. For this reason, few existing systems use this type of detection. Instead IDSs using this type of detection mechanism are more an an open area of research than production level systems. 
-    		\begin{figure}[h!]
-		\centering
-		\includegraphics[width=0.5\textwidth]{signatreVSanomaly.png}
-		\caption{Summary of Event Analysis systems. Image taken from \cite{Alenezi2012}}
-		\label{comparison}
+    	\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{signatreVSanomaly.png}
+			\caption{Summary of Event Analysis systems. Image taken from \cite{Alenezi2012}}
+			\label{comparison}
 	\end{figure}
 \section{Related Work}
     % I think we want to model this section after [Bhuyan, Bhattacharyya, Kalitan]
@@ -85,8 +85,23 @@ Jacob Fuhrman
     \subsection{Probes}
 	 This section is will discuss various approaches to detecting Probe attacks. Probes have been classified as any passive information gathering intrusion. The most common form of probe attack, one which will be discussed at length, is the port scan. The motivation for detecting these types of scans is that any intelligent attacker wishing to launch a successful attack will gather background information about the victims system before launching his or her attack. Their primary means of gathering information is by first launching a port scan.
 	 
-	 There are 65,536 standardly defined ports on a given machine. These are broken down into three large categories: \emph{a.} Well-known ports(0-1,023), \emph{b.} Registered ports (1,024-49,151), \emph{c.} Dynamic and/or private ports (49,152-65,536) [Matiti, P Lecture notes from Surveying Port Scans Methodologies]. %TODO Cite this!
-Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. Within these categories, \cite{2002}
+	 There are 65,536 standardly defined ports on a given machine. These are broken down into three large categories: \emph{a.} Well-known ports(0-1,023), \emph{b.}Registered ports (1,024-49,151), \emph{c.} Dynamic and/or private ports (49,152-65,536) [Matiti, P Lecture notes from Surveying Port Scans Methodologies]. %TODO Cite this!
+Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. Within these categories, \cite{Staniford2002} further divides each of these categories into horizantal, vertical, stobe, and block scans based on the number of machines and ports scanned. A summary of these categories can be found in \ref{portScans}.
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.45\textwidth]{portScans.png}
+		\caption{Summary of Port Scans. Image taken from \cite{Bhuyan2011}}
+		\label{portScans}
+	\end{figure}
+	
+	There is a great deal of research into detecting port scans. Several prominent authors' work will be discussed in the following sub section. They have been organized into signature-based, and anomaly-based detection scheme. \cite{Bhuyan2011} presents a much more rigorous taxonomy of detection methodologies that we leave up to all interested parties to explore. 
+		\subsubsection{Signature-Based Detection}
+		\begin{description}
+			\item[] %Src 1
+			\item[] %Src 2
+		\end{description}
+		\subsubsection{Anomaly-Based Detection}
+		
     
     \subsection{Privilege Escalation}
     Privilege Escalation attacks are described in two general categories in this paper: Remote to User Attacks and User to Root Attacks. In the broadest sense, Remote to User Attacks are when an attacker seeks to gain local user access to a machine that they have network access to. A User to Root Attack, as one may infer from its name, is when an attacker who already possesses local user access seeks to escalate their privileges to those of a root user, IE gain root user access. In the following sections, both types of attacks are explained in detail.
