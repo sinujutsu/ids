@@ -61,7 +61,7 @@ Jacob Fuhrman
     
     %However, host-based audit systems do lend themselves to several key flaws. The first flaw, and arguably the most regrettable considering the impressive list of strengths listed above, is the fact that host-based systems are vulnerable to attack. Simply, the host-based system resides on the system it monitors, and thus a clever attacker, if they can locate where the software sits on the system, can disable or perhaps even destroy a host-based audit system if they gain access to the computer it rests on. The second flaw is that host-based systems, by design, have only the resources of the host system they reside on and monitor available to perform their analysis with, and cannot be supplemented in this task. Thus in the perhaps rare scenario in which one possess an important system that needs to be protected at the host-level, but the system is composed of low-performance hardware, a host-based solution is simply not feasible. Moreover, on systems with reasonably powerful hardware, one could imagine the scenario in which the system, if it is acting as a webserver or providing services to a large number of clients, may experience a large enough request for said services that its resources could become tied up in managing server-client interactions to the extent that a host-based system is unable to perform its analysis. This, of course, is a critical flaw in the system's design, as the behavior of the increasingly prevalent Denial of Service attack exploits just this sort of resource-binding potential. Thus the efficacy of host-based systems is predicated by the amount of resources a system has to work with, making such systems incredibly vulnerable to Denial of Service attacks.
     	\subsubsection{Network-Based}
-    		Network-based IDSs (NIDS) are characterized by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These types of systems work by monitoring network traffic looking for patterns in flow or analyzing packet headers for trends. These are the most commonly used types of systems today. 
+    		Network-based IDSs (NIDS) are characterized by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These types of systems work by monitoring network traffic looking for patterns in flow or analyzing packet headers for trends. These are the most commonly used types of systems today. It is worth noting that this category of IDS can be further subdivided by type of network data analyzed \cite{Bhuyan2011}. 
     		
     		NIDSs have many advantages over a host-based system, mainly that fewer sensors are required to cover the entire network, which also means less installation time and maintenance. These types of systems also have little to no impact on network performance, because they are sensors that traffic is simply routed through. As they are their own independent system residing on the network, they can be set up in such a way that they are invisible to outsiders. This hidden nature also makes them very insulated from attack themselves, which is a large advantage for network administrators. 
     		
@@ -87,6 +87,9 @@ Jacob Fuhrman
 \section{Related Work}
     % I think we want to model this section after [Bhuyan, Bhattacharyya, Kalitan]
     % Their paper is in the probes section of Mendeley,you should go check it out
+    %XXX: NEED MORE IN THIS SECTION
+    In this section we present our categories of attack summarize multiple authors approaches to detecting attacks within those categories.
+    
     \subsection{Probes}
 	 This section is will discuss various approaches to detecting Probe attacks. Probes have been classified as any passive information gathering intrusion. The most common form of probe attack, one which will be discussed at length, is the port scan. The motivation for detecting these types of scans is that any intelligent attacker wishing to launch a successful attack will gather background information about the victims system before launching his or her attack. Their primary means of gathering information is by first launching a port scan.
 	 
@@ -99,7 +102,7 @@ Essentially, a port scan consists of sending a message to each of these ports an
 		\label{portScans}
 	\end{figure}
 	
-	There is a great deal of research into detecting port scans. Several prominent authors' work will be discussed in the following sub section. They have been organized into signature-based, and anomaly-based detection scheme. \cite{Bhuyan2011} presents a much more rigorous taxonomy of detection methodologies that we leave up to all interested parties to explore. 
+	There is a great deal of research into detecting port scans. Several prominent authors' work will be discussed in the following sub section. They have been organized into signature-based, and anomaly-based detection scheme. \cite{Bhuyan2011} presents a much more rigorous taxonomy of detection methodologies that we leave up to all interested parties to explore. We felt that many of the systems they discuss belong to several of their categories and that a higher level taxonomy made the distinction clearer. 
 		\subsubsection{Signature-Based Detection}
 		\begin{description}
 			\item[] %Src 1
