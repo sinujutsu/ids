@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 MAY 2013 12:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 MAY 2013 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,20 +304,18 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 47--48
 File: signatreVSanomaly.png Graphic file (type png)
 
 <use signatreVSanomaly.png>
-Package pdftex.def Info: signatreVSanomaly.png used on input line 74.
+Package pdftex.def Info: signatreVSanomaly.png used on input line 80.
 (pdftex.def)             Requested size: 252.0pt x 60.33797pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 74--75
+Overfull \hbox (12.0pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-[2 <./signatreVSanomaly.png>] (./Jamroz.Furhman.FinalPaper.bbl
+(./Jamroz.Furhman.FinalPaper.bbl [2 <./signatreVSanomaly.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-[4
-
-] (./Jamroz.Furhman.FinalPaper.aux) ) 
+) [3]
+(./Jamroz.Furhman.FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
  2815 strings out of 493488
  36033 string characters out of 3141326
@@ -325,19 +323,19 @@ Here is how much of TeX's memory you used:
  6053 multiletter control sequences out of 15000+200000
  48451 words of font info for 65 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,10n,26p,1740b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhv
-b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (4 pages, 139383 bytes).
+ 41i,10n,26p,1741b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/en
+c/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8
+a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Jamroz.Furhman.FinalPaper.pdf (3 pages, 136582 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
