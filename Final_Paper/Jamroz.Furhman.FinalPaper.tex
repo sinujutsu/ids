@@ -39,7 +39,9 @@ Jacob Fuhrman
 
 \section{Introduction}
 % This sucks
-	Intrusion detection is the process of detecting unauthorized use of a system and alerting the proper authorities of such misuse. Intrusion detection systems (IDS) are the systems used to to detect these misuses and aid in their defence. 
+	Intrusion detection is the process of detecting unauthorized use of a system and alerting the proper authorities of such misuse. Intrusion detection systems (IDS) are the systems used to to detect these misuses and aid in their defense. 
+% Yea, well, I wrote a really big intro that dissapeared in the merge. Not good enough?
+%	In a world of increasing connectivity and nearly ubiquitous technology, the importance of computer security has grown with the user base it has sought to protect. As the "smartphone" has come into such prevalent use in the U.S. and abroad, millions of people use these minicomputers daily. In addition, users of modern technology interact with tens or hundreds of other devices each day, from wireless networks, to connections across their devices at home, to accessing content on the web. With daily access to these services becoming so important to such a massive user base, it is only natural that they would become attractive targets to attackers, and thus all the more important to defend. There are many approaches available to defending a given system or a network of systems, but one that has risen in scientific interest lately is the Intrusion Detection System, a software suite intended to detect attacks made against a network or system and notify those charged with protecting it.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.5\textwidth]{idsBreakdown.png}
@@ -48,15 +50,15 @@ Jacob Fuhrman
 	\end{figure}
     % Will need some filler intro stuff here
 
-    % In this intro, explicitely state that the following information came from [Mell, Peter @ EDPACS] 
+    % In this intro, explicitly state that the following information came from [Mell, Peter @ EDPACS] 
     \subsection{Audit Systems}
     	This section will breakdown IDSs by their audit system, which describes the source of the data that they analyse for intrusions. There are three main types of audit systems: \emph{Host-Based}, \emph{Network-Based}, and \emph{Application-Based}.
     	\subsubsection{Host-Based}
-    		Host-Based IDSs (HIDS) are characterised by having detection sensors on each individual machine within a network. These types of systems monitor an individual computer's system logs to detect attacks. HIDSs are able to detect attacks with much more specificity than network-based systems because they are able to monitor individual processes on an particular machine for malicious activity. 
+    		Host-Based IDSs (HIDS) are characterized by having detection sensors on each individual machine within a network. These types of systems monitor an individual computer's system logs to detect attacks. HIDSs are able to detect attacks with much more specificity than network-based systems because they are able to monitor individual processes on an particular machine for malicious activity. 
     		
     		There are many advantages to using a HIDS. First, and fore most, they are able to detect attacks that network-based sensors cannot, because they are running on the host machine. Next, unlike network-based sensors, they are fully functional within both switched, and encrypted networks because their audit source is independent of network traffic, and they are able to use host resources to decrypt traffic before analysis.
     	\subsubsection{Network-Based}
-    		Network-based IDSs (NIDS) are characterised by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These types of systems work by monitoring network traffic looking for patterns in flow or analysing packet headers for trends. These are the most commonly used types of systems today. 
+    		Network-based IDSs (NIDS) are characterized by having detection sensors placed at network hubs, such as routers, rather than on each individual machine in a network. These types of systems work by monitoring network traffic looking for patterns in flow or analysing packet headers for trends. These are the most commonly used types of systems today. 
     		
     		NIDSs have many advantages over a host-based system, mainly that fewer sensors are required to cover the entire network, which also means less installation time and maintenance. These types of systems also have little to no impact on network performance, because they are sensors that traffic is simply routed through. As they are their own independent system residing on the network, they can be set up in such a way that they are invisible to outsiders. This hidden nature also makes them very insulated from attack themselves, which is a large advantage for network administrators. 
     		

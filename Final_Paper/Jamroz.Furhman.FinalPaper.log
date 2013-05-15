@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 MAY 2013 20:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 MAY 2013 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,10 +290,10 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <idsBreakdown.png, id=1, 416.55624pt x 220.825pt>
 File: idsBreakdown.png Graphic file (type png)
  <use idsBreakdown.png>
-Package pdftex.def Info: idsBreakdown.png used on input line 45.
+Package pdftex.def Info: idsBreakdown.png used on input line 47.
 (pdftex.def)             Requested size: 252.0pt x 133.5911pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 45--46
+Overfull \hbox (12.0pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
@@ -304,10 +304,10 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 45--46
 File: signatreVSanomaly.png Graphic file (type png)
 
 <use signatreVSanomaly.png>
-Package pdftex.def Info: signatreVSanomaly.png used on input line 72.
+Package pdftex.def Info: signatreVSanomaly.png used on input line 74.
 (pdftex.def)             Requested size: 252.0pt x 60.33797pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 72--73
+Overfull \hbox (12.0pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
@@ -334,7 +334,7 @@ s/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (4 pages, 139376 bytes).
+Output written on Jamroz.Furhman.FinalPaper.pdf (4 pages, 139383 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
