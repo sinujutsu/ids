@@ -13,45 +13,45 @@ Warning--empty journal in JanaSuman;Kasera
 Warning--empty year in JanaSuman;Kasera
 Warning--empty journal in McDowell2013
 Warning--there's a number but no volume in Specht2004
-You've used 35 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            708 strings with 9844 characters,
-and the built_in function-call counts, 10728 in all, are:
-= -- 1071
-> -- 488
+            713 strings with 10004 characters,
+and the built_in function-call counts, 10925 in all, are:
+= -- 1088
+> -- 495
 < -- 12
-+ -- 191
-- -- 156
-* -- 661
-:= -- 1797
-add.period$ -- 103
-call.type$ -- 35
-change.case$ -- 183
++ -- 194
+- -- 158
+* -- 667
+:= -- 1829
+add.period$ -- 105
+call.type$ -- 36
+change.case$ -- 187
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 444
-empty$ -- 796
-format.name$ -- 156
-if$ -- 2250
+cite$ -- 46
+duplicate$ -- 451
+empty$ -- 818
+format.name$ -- 158
+if$ -- 2293
 int.to.chr$ -- 0
-int.to.str$ -- 35
+int.to.str$ -- 36
 missing$ -- 32
-newline$ -- 175
-num.names$ -- 68
-pop$ -- 195
+newline$ -- 179
+num.names$ -- 70
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 148
+purify$ -- 151
 quote$ -- 0
-skip$ -- 356
+skip$ -- 364
 stack$ -- 0
-substring$ -- 554
-swap$ -- 109
+substring$ -- 559
+swap$ -- 110
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
+type$ -- 144
 warning$ -- 10
-while$ -- 107
-width$ -- 37
-write$ -- 361
+while$ -- 109
+width$ -- 38
+write$ -- 369
 (There were 10 warnings)
