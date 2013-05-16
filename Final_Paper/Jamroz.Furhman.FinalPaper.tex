@@ -94,7 +94,7 @@ Jacob Fuhrman
 	 This section is will discuss various approaches to detecting Probe attacks. Probes have been classified as any passive information gathering intrusion. The most common form of probe attack, one which will be discussed at length, is the port scan. The motivation for detecting these types of scans is that any intelligent attacker wishing to launch a successful attack will gather background information about the victims system before launching his or her attack. Their primary means of gathering information is by first launching a port scan.
 	 
 	 There are 65,536 standardly defined ports on a given machine. These are broken down into three large categories: \emph{a.} Well-known ports(0-1,023), \emph{b.}Registered ports (1,024-49,151), \emph{c.} Dynamic and/or private ports (49,152-65,536) [Matiti, P Lecture notes from Surveying Port Scans Methodologies]. %TODO Cite this!
-Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. Within these categories, \cite{Staniford2002} further divides each of these categories into horizantal, vertical, stobe, and block scans based on the number of machines and ports scanned. A summary of these categories can be found in \ref{portScans}.
+Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful \cite{SilenokElena;RoedelChris;Silenok}. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. Within these categories, \cite{Staniford2002} further divides each of these categories into horizantal, vertical, stobe, and block scans based on the number of machines and ports scanned. A summary of these categories can be found in \ref{portScans}.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.45\textwidth]{portScans.png}
@@ -105,10 +105,18 @@ Essentially, a port scan consists of sending a message to each of these ports an
 	There is a great deal of research into detecting port scans. Several prominent authors' work will be discussed in the following sub section. They have been organized into signature-based, and anomaly-based detection scheme. \cite{Bhuyan2011} presents a much more rigorous taxonomy of detection methodologies that we leave up to all interested parties to explore. We felt that many of the systems they discuss belong to several of their categories and that a higher level taxonomy made the distinction clearer. 
 		\subsubsection{Signature-Based Detection}
 		\begin{description}
-			\item[] %Src 1
-			\item[] %Src 2
+			%TODO Cite all of these articles
+			\item[Paxon:]
+				In this article, the author describes an open-source NIDS called Bro. This system is designed to be a real time signature based approach to detecting port scans. It relies on the LIBCAP library for capturing network data and is capable of both TCP and UDP processing. It functions by analyzing packet header information to generate what it calls events. These events are \emph{connection attempt, connection established, connection rejected,} and \emph{connection finished}. The preprocessor then passes these events to the analysis engine which alerts the administrator if these events ever cross a certain threshold. It also attempts to detect vertical scans by looking for the one source trying to contact X number of ports in Y amount of time. The main drawbacks to this system are that it drops packets in times of high network traffic load, and produces a high level of false positives. 
+			\item[Roesch:]
+			\item[Mahomey and Chan:]
 		\end{description}
 		\subsubsection{Anomaly-Based Detection}
+		\begin{description}
+			\item[Kim \emph{et al.}:]
+			\item[Ertoz \emph{et al.}:]
+			\item[Streilein \emph{et al.}:]
+		\end{description}
 		
     
     \subsection{Privilege Escalation} %Notes to be added at the end of this: shit is short because look at the discussion section, fucker.
