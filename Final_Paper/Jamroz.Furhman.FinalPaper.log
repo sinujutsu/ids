@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 12:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,20 +308,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: signatreVSanomaly.png Graphic file (type png)
 
 <use signatreVSanomaly.png>
-Package pdftex.def Info: signatreVSanomaly.png used on input line 92.
+Package pdftex.def Info: signatreVSanomaly.png used on input line 93.
 (pdftex.def)             Requested size: 252.0pt x 60.33797pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 92--93
+Overfull \hbox (12.0pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
 <portScans.png, id=19, 413.545pt x 176.66pt>
 File: portScans.png Graphic file (type png)
  <use portScans.png>
-Package pdftex.def Info: portScans.png used on input line 109.
+Package pdftex.def Info: portScans.png used on input line 110.
 (pdftex.def)             Requested size: 226.79846pt x 96.88564pt.
  [3 <./signatreVSanomaly.png> <./portScans.png>]
-Overfull \hbox (8.97624pt too wide) in paragraph at lines 138--139
+Overfull \hbox (8.97624pt too wide) in paragraph at lines 139--140
 \T1/aer/m/n/9 in our ex-pla-na-tion of signature-based IDSs, [20] shows, throug
 h
  []
@@ -334,7 +334,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Here is how much of TeX's memory you used:
  2826 strings out of 493488
  36175 string characters out of 3141326
- 97409 words of memory out of 3000000
+ 98409 words of memory out of 3000000
  6060 multiletter control sequences out of 15000+200000
  50964 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -349,7 +349,7 @@ m/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (5 pages, 189797 bytes).
+Output written on Jamroz.Furhman.FinalPaper.pdf (5 pages, 190000 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
