@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAY 2013 19:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAY 2013 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -195,43 +195,35 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen123
-\WF@size=\dimen124
-\c@WF@wrappedlines=\count109
-\WF@box=\box30
-\WF@everypar=\toks36
-Package: wrapfig 2003/01/31  v 3.6
-)
 (./Jamroz.Furhman.FinalPaper.aux)
 \openout1 = `Jamroz.Furhman.FinalPaper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen125
-\scratchbox=\box31
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen126
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count109
+\scratchdimen=\dimen123
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen124
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks37
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -280,17 +272,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 32.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 31.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -298,10 +290,10 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <idsBreakdown.png, id=1, 416.55624pt x 220.825pt>
 File: idsBreakdown.png Graphic file (type png)
  <use idsBreakdown.png>
-Package pdftex.def Info: idsBreakdown.png used on input line 48.
+Package pdftex.def Info: idsBreakdown.png used on input line 47.
 (pdftex.def)             Requested size: 252.0pt x 133.5911pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 48--49
+Overfull \hbox (12.0pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
@@ -313,44 +305,60 @@ pt>
 File: signatreVSanomaly.png Graphic file (type png)
 
 <use signatreVSanomaly.png>
-Package pdftex.def Info: signatreVSanomaly.png used on input line 99.
+Package pdftex.def Info: signatreVSanomaly.png used on input line 98.
 (pdftex.def)             Requested size: 252.0pt x 60.33797pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 99--100
+Overfull \hbox (12.0pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
 <portScans.png, id=18, 413.545pt x 176.66pt>
 File: portScans.png Graphic file (type png)
  <use portScans.png>
-Package pdftex.def Info: portScans.png used on input line 116.
+Package pdftex.def Info: portScans.png used on input line 115.
 (pdftex.def)             Requested size: 226.79846pt x 96.88564pt.
- [3 <./signatreVSanomaly.png>] [4 <./portScans.png>]
-Overfull \hbox (8.97624pt too wide) in paragraph at lines 152--153
-\T1/aer/m/n/9 in our ex-pla-na-tion of signature-based IDSs, [20] shows, throug
+ [3 <./signatreVSanomaly.png>]
+Overfull \hbox (5.83104pt too wide) in paragraph at lines 132--133
+[]\T1/aer/m/n/9 These au-thors present the NIDS
+ []
+
+
+Overfull \hbox (14.84856pt too wide) in paragraph at lines 134--135
+[]\T1/aer/m/n/9 The au-thors present a sys-tem called MINDS
+ []
+
+[4 <./portScans.png>]
+Overfull \hbox (8.97624pt too wide) in paragraph at lines 148--149
+\T1/aer/m/n/9 in our ex-pla-na-tion of signature-based IDSs, [23] shows, throug
 h
  []
 
-<doSBreakdown.png, id=27, 578.16pt x 257.96375pt>
+[5] <doSBreakdown.png, id=30, 578.16pt x 257.96375pt>
 File: doSBreakdown.png Graphic file (type png)
  <use doSBreakdown.png>
-Package pdftex.def Info: doSBreakdown.png used on input line 173.
+Package pdftex.def Info: doSBreakdown.png used on input line 174.
 (pdftex.def)             Requested size: 252.0pt x 112.43768pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 173--174
+Overfull \hbox (12.0pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
-[5 <./doSBreakdown.png>] (./Jamroz.Furhman.FinalPaper.bbl [6]
+[6 <./doSBreakdown.png>]
+Overfull \hbox (13.00331pt too wide) in paragraph at lines 205--206
+\T1/aer/m/n/9 in-ef-fec-tive at sim-u-lat-ing net-work traf-fic and at test-ing
+ signature-
+ []
+
+(./Jamroz.Furhman.FinalPaper.bbl [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [7]
+) [8]
 (./Jamroz.Furhman.FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
- 2898 strings out of 493488
- 37133 string characters out of 3141326
- 99629 words of memory out of 3000000
- 6127 multiletter control sequences out of 15000+200000
+ 2841 strings out of 493488
+ 36385 string characters out of 3141326
+ 98459 words of memory out of 3000000
+ 6074 multiletter control sequences out of 15000+200000
  50964 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,26p,1815b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -364,10 +372,10 @@ m/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 .pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (7 pages, 230722 bytes).
+Output written on Jamroz.Furhman.FinalPaper.pdf (8 pages, 238763 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,6 +16,12 @@ S.~Alexander.
 \newblock {\em Proceedings of the 28th Annual Computer Security \ldots}, pages
   145--148, 2012.
 
+\bibitem{Attacks2002}
+D.-o.-s. Attacks, W.~W. Streilein, R.~K. Cunningham, and S.~E. Webster.
+\newblock {Improved Detection of Low-Profile Probe and}.
+\newblock {\em Proceedings of Workshop on Statistical and Machine Learning
+  Techniques in Computer Intrusion Detection}, pages 1--6, June 2002.
+
 \bibitem{Bernaschi2000}
 M.~Bernaschi, E.~Gabrielli, and L.~Mancini.
 \newblock {Operating system enhancements to prevent the misuse of system
@@ -53,6 +59,15 @@ Y.~Djemaiel and N.~Boudriga.
 W.~Eddy.
 \newblock {TCP SYN flooding attacks and common mitigations}.
 \newblock 2007.
+
+\bibitem{Ertoz2003}
+L.~Ertoz, E.~Eilertson, and A.~Lazarevic.
+\newblock {Detection of novel network attacks using data mining}.
+\newblock {\em Processdings of ICDM WDMCS'03}, pages 30--39, 2003.
+
+\bibitem{G.2006}
+C.~G.
+\newblock {Malware FAQ: Analysis on DDoS tool Stacheldraht v1.666}, 2006.
 
 \bibitem{Gandhi2008}
 M.~Gandhi and S.~Srivatsa.
@@ -123,6 +138,13 @@ V.~Livshits and M.~Lam.
   analysis}.
 \newblock {\em \ldots of the 14th conference on USENIX Security \ldots}, 2005.
 
+\bibitem{Mahoney2001}
+M.~Mahoney and P.~Chan.
+\newblock {PHAD: Packet header anomaly detection for identifying hostile
+  network traffic}.
+\newblock {\em Florida Institute of Technology technical report CS},
+  (1998):1--17, 2001.
+
 \bibitem{McDowell2013}
 M.~McDowell and This.
 \newblock {Security Tip ( ST04 ­ 015 ) Understanding Denial ­ of ­ Service
@@ -148,10 +170,29 @@ D.~K. Nilsson and U.~E. Larson.
 \newblock {\em International Journal of Digital Crime and Forensics},
   1(2):28--41, 2009.
 
+\bibitem{Paxson1998}
+V.~Paxson and V.~Paxson.
+\newblock {Bro : A System for Detecting Network Intruders in Real-Time Bro : A
+  System for Detecting Network Intruders in Real-Time}.
+\newblock {\em Proceedings of the USNIX Security Symposium}, pages 2435--2469,
+  Jan. 1998.
+
+\bibitem{R.2004}
+K.~R., S.~S., and V.~G.
+\newblock {On scalable attack detection in the network}.
+\newblock {\em Proceedings of the 4th ACM SIGCOMM Conference on Internet
+  Measurment}, pages 187--200, 2004.
+
 \bibitem{Richardson2008}
 R.~Richardson and C.~Director.
 \newblock {CSI computer crime and security survey}.
 \newblock {\em Computer Security Institute}, 2008.
+
+\bibitem{Roesch1999}
+M.~Roesch and M.~Roesch.
+\newblock {S N O R T — L I G H T W E I G H T I N T R U S I O N Snort –
+  Lightweight Intrusion Detection for Networks}.
+\newblock {\em Proceedings of LISA'99}, pages 229--238, Nov. 1999.
 
 \bibitem{Sailer2004}
 R.~Sailer, T.~Jaeger, X.~Zhang, and L.~van Doorn.
@@ -186,6 +227,12 @@ F.~Sun, L.~Xu, and Z.~Su.
 \newblock {Static detection of access control vulnerabilities in web
   applications}.
 \newblock {\em Proceedings of the 20th USENIX conference on \ldots}, 2011.
+
+\bibitem{T.2009}
+P.~T., L.~C., R.~K., and V.~E.
+\newblock {Survey of network-based defense mechanisms countering the DoS and
+  DDos problems}.
+\newblock {\em Computers \& Security}, 28:18 --28, 2009.
 
 \bibitem{Taylor2006}
 P.~Taylor and P.~Mell.

@@ -4,7 +4,6 @@
 
 \documentclass{acm_proc_article-sp}
 \usepackage{graphicx}
-\usepackage{wrapfig}
 \setlength\parindent{12pt}
 %\usepackage{cite}
 
@@ -121,27 +120,24 @@ Essentially, a port scan consists of sending a message to each of these ports an
 	There is a great deal of research into detecting port scans. Several prominent authors' work will be discussed in the following sub section. They have been organized into signature-based, and anomaly-based detection scheme. \cite{Bhuyan2011} presents a much more rigorous and extensive taxonomy of detection methodologies that we leave up to all interested parties to explore. We felt that many of the systems they discuss belong to several of their categories and that a higher level taxonomy made the distinction clearer. 
 		\subsubsection{Signature-Based Detection}
 		\begin{description}
-			%TODO Cite all of these articles
-			\item[Paxon:]
+			\item[Paxon:] %TODO Cite this!
 				In this article, the author describes an open-source NIDS called Bro. This system is designed to be a real time signature based approach to detecting port scans. It relies on the LIBCAP library for capturing network data and is capable of both TCP and UDP processing. It functions by analyzing packet header information to generate what it calls events. These events are \emph{connection attempt, connection established, connection rejected,} and \emph{connection finished}. The preprocessor then passes these events to the analysis engine which alerts the administrator if these events ever cross a certain threshold. It also attempts to detect vertical scans by looking for the one source trying to contact X number of ports in Y amount of time. The main drawbacks to this system are that it drops packets in times of high network traffic load, and produces a high level of false positives. 
-			\item[Roesch:]
+			\item[Roesch \cite{Roesch1999}:]
 				This article describes the use of another freeware IDS called SNORT. SNORT was designed to be a very lightweight and cost effective solution for companies that needed security, but could not afford a proprietary system. SNORT can function as both a HIDS or NIDS that used signature based detection. Similarly to Bro, SNORT preprocesses data for before sending it to an analytic engine that matches the data against the signature database. SNORT is one of the most prolific IDS on the market because of its compatibility, flexibility, and low false positive rate. A drawback to this type of system is scalability. Its primary design was for low stress networks.
 						
 		\end{description}
 		\subsubsection{Anomaly-Based Detection}
 		\begin{description}
-			\item[Mahomey and Chan:]
+			\item[Mahoney and Chan \cite{Mahoney2001}:]
 				These authors present the NIDS PHAD (Packet Header Anomaly Detection system). It uses a machine learning approach to form normal values for the 33 TCP, IP, UDP, and ICMP packet header fields. The system was trained for 5 days on training data. It then used time differential analysis to assign a probability of attack to incoming packet information. The system was tested for 10 days on the 1999 offline DARPA packet test data set and was able to detect 67 of 201 listed attacks with a false positive rate of 10 per day.
-			\item[Ertoz \emph{et al.}:]
+			\item[Ertoz \emph{et al.} \cite{Ertoz2003}:]
 				The authors present a system called MINDS (Minnesota INtrusion Detection System). It uses NetFlow for network traffic monitoring so that it can analyze flow level information, packet source/destination characteristics, and packet size. It uses a data mining approach to compare trends in network data flow with its system profile. The events that it analyses are assigned an anomaly score, which are this systems criteria for alerting the system administrator. It was shown to have comparable performance to SNORT and was said to be able to detect stealthy port scans, but little to no data was supplied on its effectiveness in this area.
-			\item[Streilein \emph{et al.}:]
+			\item[Streilein \emph{et al.} \cite{Attacks2002}:]
 			The authors describe a system for detecting stealthy port scans and Denial of Service attacks. Their system is a tabling approach that keeps track of connection statistics such as time, source,and  destination. A series of artificial neural networks are used to analyze the data for anomalous behavior. Their system was trained on the 1998 and 1999 DARPA training data sets and was shown to have a detection rate of 100\% and relative false positive rate of 0.1\%. These results show promise, but not as much as it might seem do to the strong criticisms of their chosen data set. We present theses criticisms in the discussion section. 			
 		\end{description}
 		
 		\subsubsection{Analysis}
-		
-		
-    
+
     \subsection{Privilege Escalation} %Worth noting here that category "Privilege Escalation" is semi-arbitrary, IE not a formal category (that, or just cover it in discussion section).
     	Privilege Escalation attacks are described in two general categories in this paper: Remote to User Attacks and User to Root Attacks. In the broadest sense, Remote to User Attacks are when an attacker seeks to gain local user access to a machine that they have network access to. A User to Root Attack, as one may infer from its name, is when an attacker who already possesses local user access seeks to escalate their privileges to those of a root user, IE gain root user access. In the following sections, both types of attacks are explained in detail.
     \subsubsection{Remote to User}
@@ -156,7 +152,7 @@ Essentially, a port scan consists of sending a message to each of these ports an
     	
     	We classify DoS attacks as any attack that's goal is to tie up a resource on the victims machine. The types of attacks can be broadly classified as \emph{software exploits} and \emph{flood attacks.} This section will focus on flood attacks because the majority of software exploit attacks can be solved by keeping one's system up to date with all software patches \cite{Hussain2003}. 
     	
-    	One of the open problems in studying this type of attack is that there is no standard taxonomy describing the breakdown of the various types. Here, we present Specht and Lee's taxonomy for classifying attacks because we felt that it was the most complete and easy to understand. The following descriptions where originally described by them in \cite{Specht2004} a summary of which can be found in figure \ref{breakdown2}. 
+    	One of the open problems in studying this type of attack is that there is no standard taxonomy describing the breakdown of the various types. Here, we present Specht and Lee's taxonomy for classifying attacks because we felt that it was the most complete and easy to understand. The following descriptions where originally described by them in \cite{Specht2004} a summary of which can be found in figure \ref{breakdown2}. DoS attacks can, at a high level, be classified as single source or multi-source, where the latter are referred to as Distributed Denial of Service (DDoS) attacks. DDoS attacks are becoming more and more common as they are a powerful means of launching an attack and are harder to trace. The following categories apply to both single-source DoS and DDos attacks.
     		\subsubsection{Flood Attacks}
     		Flood attacks are characterized by compromised systems (zombies) sending large amounts of network traffic to a victim machine. This overload of traffic causes the victim's system to slow down to an unusable level or crash entirely. The most commonly used protocols for this type of attack are UDP and ICMP. In a UDP flood attack, large amounts of UDP packets are sent to either random or sometimes specific ports on the victims machine. The victim machine tries to determine which application is requesting connections and thus ties up all its resources. 
     		
@@ -166,15 +162,27 @@ Essentially, a port scan consists of sending a message to each of these ports an
     		
     		During a smurf attack, ICMP ECHO REPLY packets are sent to a network amplifier with a spoofed return address. During a fraggle attack, UDP ECHO packets are sent to a network amplifier and the victim's echo port and character generation port are spoofed as return the address. This causes the the victim's system to enter and infinite loop where the character generation port sends packets to the echo port and so on and so forth.
     		\subsubsection{Protocol Exploit Attacks}
+    		These types of attacks take advantage of an inherit flaw in a particular network protocol's design. In this way, examples are the best way to understand these types of attacks, so we present two TCP SYN, and PUSH ACK attacks. 
     		
+    		During a TCP SYN attack, the attacker or attackers will send illegitimate TCP Synchronization with a spoofed IP return address to the victims machine. The victim will then  reply to the message, the second step in the handshake process, but because the return address is spoofed, no reply will ever come back. The victim machine will then be stuck trying to maintain this growing number of open, but incomplete, connections. Eventually, the victim's machine will run out of buffer space and will thus be unable to respond to legitimate traffic.
+    		
+    		In a PUSH ACK attack, the attacker or attackers send TCP packets with both the PUSH and ACK fields set to one. This causes the victim machine to dump and buffered TCP data and send and ACK when done. If enough of these calls are made within the victim system, it will eventually run out of processing power and crash.
     		\subsubsection{Malformed Packet Attacks}
+    		These types of attacks are characterized by an attacker sending malformed packets to the victims system in order to lock up its computing resources. For example, a packet can be set to have the same source and destination IP addresses to confuse the victims system, or all quality control bits can be set to one so that the victim's system must use extra resources to process the packets. The goal being that if enough of these packets are sent, the victims system will crash or become unable to handle legitimate traffic.
     		\begin{figure}[h!]
 				\centering
 				\includegraphics[width=0.5\textwidth]{doSBreakdown.png}
-				\caption{A breakdown of different types of DoS attacks \cite{Specht2004}}
+				\caption{A summary of the different types of DoS attacks \cite{Specht2004}}
 				\label{breakdown2}
  			\end{figure}
-
+		\subsubsection{Detection Methodologies} 
+		DoS attacks are notoriously hard to detect and prevent. This difficulty is due to the fact that they take advantage of existing architectural implementation. We present three approaches to trying to solve this problem or related sub-problem, but it is worth noting that currently there is no comprehensive solution to detecting or defending against all known forms of DoS attacks \cite{Specht2004}. No strictly signature-based detection methods will be discussed because multiple authors, \cite{T.2009}, \cite{R.2004}, \cite{G.2006}, argue that signature-based methods are ineffective for detecting these types of attacks. However, one author \cite{Alenezi2012} did make the case that simple DoS attacks can be detected using signature-based methods. While there is merit to this argument, these are not the types of attacks that most systems are worried about. Any attack of considerable risk must be detected using anomaly-based detection.
+		\begin{description}
+			\item{Labib and Vemuri \cite{Labib2004}:} They use multivariate statistical approaches to detect DDoS and Neptune probe attacks with a focus on real time detection. More specifically, they use Principle Component Analysis to reduce the multidementional space represented by network feature vectors for real time analysis. They are able to detect 100\% of attacks in the DARPA 1998 data set, however, as noted earlier, the data set that they tested on has been criticized of being unsatisfactory. \emph{See Section \ref{trainingSets}}. A more exhaustive discussion on DoS attack detection can be found in \cite{Alenezi2012}.
+			\item{You, Zulkrnine, and Haque \cite{}:} %Need citation  
+			These authors present a system that detects DoS attacks by analyzing differences in distances. The Time to Live (TTL) field is used to infer the distance away that a packet originated because it is usually a field that is automatically filled by the kernal and not often spoofed by attackers. A normal system distance profile is built using the average TTL value over a period of time. This information is compared with traffic arrival rates, and the correlation between the two is used to detect anomalous behavior. Both normal and abnormal looking traffic are determined by use of the mean absolute deviation. The difficulties that this approach encountered was that a clever attacker would be able to spoof the TTL packets in such a way that they would not be detected, and that network traffic routes are constantly changing, so TTL is not always an accurate representation of the distance that a packet has traveled.
+			\item{Hussain, Heidemann, and Papadopoulos \cite{Hussain2003}:} 
+		\end{description}
     		
 
 \section{Methods}
@@ -187,7 +195,7 @@ Essentially, a port scan consists of sending a message to each of these ports an
 
 \section{Discussion}
     % What would we say here?
-    \subsection{Training Sets}
+    \subsection{Training Sets} \label{trainingSets}
     	In the course of our research, there were several points where we discovered current work in the field is underdeveloped, heavily criticized, or lacking in some way. Training sets of network traffic for IDSs was one of the largest sections of our research where we discovered this, as we learned that there is essentially only one training set that is moderately successful in gauging the efficacy of an IDS (the 1999 DARPA training set), and it is heavily criticized nonetheless. 
     	
     	Brugger et al. \cite{Brugger2007} perform a survey of authors critiquing the DARPA evaluation, who describe the flaws in the training set from a variety of angles. One of the biggest criticisms of the training set (McHugh via Brugger et al. \cite{Brugger2007}) is that it did not accurately model/simulate a real-world network. This is quite poignant, as a realistic simulation of a real-world network is absolutely crucial if one's intent is to gauge how effective a given IDS would be at detecting attacks in a real-world scenario. Naturally, this is difficult to do effectively, as it begs the question: what makes a given simulation of network traffic ``realistic"? Human users are unpredictable, and in all likelihood, any network with actual users on it may look widely different from one day to the next. How does one account for these differences when artificially creating network traffic full of attacks to gauge the efficacy of an IDS on? 
