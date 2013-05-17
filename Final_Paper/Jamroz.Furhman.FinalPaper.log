@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAY 2013 09:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAY 2013 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,7 +344,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 173--174
  []
 
 [6 <./doSBreakdown.png>]
-Overfull \hbox (13.00331pt too wide) in paragraph at lines 199--200
+Overfull \hbox (13.00331pt too wide) in paragraph at lines 198--199
 \T1/aer/m/n/9 in-ef-fec-tive at sim-u-lat-ing net-work traf-fic and at test-ing
  signature-
  []
@@ -377,7 +377,7 @@ nts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (9 pages, 240425 bytes).
+Output written on Jamroz.Furhman.FinalPaper.pdf (9 pages, 240419 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
