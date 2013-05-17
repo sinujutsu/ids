@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAY 2013 11:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAY 2013 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,46 +293,46 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 <idsBreakdown.png, id=12, 416.55624pt x 220.825pt>
 File: idsBreakdown.png Graphic file (type png)
  <use idsBreakdown.png>
-Package pdftex.def Info: idsBreakdown.png used on input line 75.
+Package pdftex.def Info: idsBreakdown.png used on input line 76.
 (pdftex.def)             Requested size: 252.0pt x 133.5911pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 75--76
+Overfull \hbox (12.0pt too wide) in paragraph at lines 76--77
  [][] 
  []
 
 [2 <./idsBreakdown.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 <signatreVSanomaly.png, id=17, 427.5975pt x 102.3825pt>
 File: signatreVSanomaly.png Graphic file (type png)
 
 <use signatreVSanomaly.png>
-Package pdftex.def Info: signatreVSanomaly.png used on input line 97.
+Package pdftex.def Info: signatreVSanomaly.png used on input line 98.
 (pdftex.def)             Requested size: 252.0pt x 60.33797pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 97--98
+Overfull \hbox (12.0pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-
-Underfull \vbox (badness 3049) has occurred while \output is active []
-
-
-<portScans.png, id=18, 413.545pt x 176.66pt>
+[3 <./signatreVSanomaly.png>] <portScans.png, id=22, 413.545pt x 176.66pt>
 File: portScans.png Graphic file (type png)
- <use portScans.png>
-Package pdftex.def Info: portScans.png used on input line 114.
+
+<use portScans.png>
+Package pdftex.def Info: portScans.png used on input line 115.
 (pdftex.def)             Requested size: 226.79846pt x 96.88564pt.
- [3 <./signatreVSanomaly.png>]
-Overfull \hbox (5.83104pt too wide) in paragraph at lines 131--132
+
+Overfull \hbox (5.83104pt too wide) in paragraph at lines 132--133
 []\T1/aer/m/n/9 These au-thors present the NIDS
  []
 
 
-Overfull \hbox (14.84856pt too wide) in paragraph at lines 133--134
+Overfull \hbox (14.84856pt too wide) in paragraph at lines 134--135
 []\T1/aer/m/n/9 The au-thors present a sys-tem called MINDS
  []
 
 [4 <./portScans.png>]
-Overfull \hbox (8.97624pt too wide) in paragraph at lines 147--148
+Overfull \hbox (8.97624pt too wide) in paragraph at lines 148--149
 \T1/aer/m/n/9 in our ex-pla-na-tion of signature-based IDSs, [23] shows, throug
 h
  []
@@ -340,15 +340,18 @@ h
 [5] <doSBreakdown.png, id=30, 578.16pt x 257.96375pt>
 File: doSBreakdown.png Graphic file (type png)
  <use doSBreakdown.png>
-Package pdftex.def Info: doSBreakdown.png used on input line 173.
+Package pdftex.def Info: doSBreakdown.png used on input line 174.
 (pdftex.def)             Requested size: 252.0pt x 112.43768pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 173--174
+Overfull \hbox (12.0pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [6 <./doSBreakdown.png>]
-Overfull \hbox (13.00331pt too wide) in paragraph at lines 198--199
+Overfull \hbox (13.00331pt too wide) in paragraph at lines 199--200
 \T1/aer/m/n/9 in-ef-fec-tive at sim-u-lat-ing net-work traf-fic and at test-ing
  signature-
  []
@@ -356,29 +359,30 @@ Overfull \hbox (13.00331pt too wide) in paragraph at lines 198--199
 [7] (./Jamroz.Furhman.FinalPaper.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8])
-[9
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./Jamroz.Furhman.FinalPaper.aux) ) 
+) [9]
+(./Jamroz.Furhman.FinalPaper.aux) ) 
 Here is how much of TeX's memory you used:
  2841 strings out of 493488
  36385 string characters out of 3141326
- 98461 words of memory out of 3000000
+ 99461 words of memory out of 3000000
  6074 multiletter control sequences out of 15000+200000
  50964 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,26p,1815b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbxti10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb
-8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Jamroz.Furhman.FinalPaper.pdf (9 pages, 241763 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/en
+c/dvips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbxti10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Jamroz.Furhman.FinalPaper.pdf (9 pages, 242641 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
