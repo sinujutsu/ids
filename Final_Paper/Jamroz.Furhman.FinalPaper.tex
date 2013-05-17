@@ -4,6 +4,7 @@
 
 \documentclass{acm_proc_article-sp}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \setlength\parindent{12pt}
 %\usepackage{cite}
 
@@ -73,11 +74,11 @@ Jacob Fuhrman
     		
     		NIDSs have many advantages over a host-based system, mainly that fewer sensors are required to cover the entire network, which also means less installation time and maintenance. These types of systems also have little to no impact on network performance, because they are sensors that traffic is simply routed through. As they are their own independent system residing on the network, they can be set up in such a way that they are invisible to outsiders. This hidden nature also makes them very insulated from attack themselves, which is a large advantage for network administrators. 
     		
-    		However, these systems are not without their drawbacks. It has been shown that in periods of high network load, these systems performance drops due to an inability to process all incoming packets. As such, they could fail to detect an attack that was launched during one of these periods. The effectiveness of these types of systems also drops in switched networks, because switches subdivide network traffic such that a NIDS can no longer monitor all traffic on the network because much of it is hidden behind a switches. Finally, NIDSs are are unable to analyse encrypted traffic. This incapability is a major drawback, especially in this day in age, as more and more traffic is being moved to encrypted channels of communication. 		
+    		However, these systems are not without their drawbacks. It has been shown that in periods of high network load, these systems performance drops due to an inability to process all incoming packets. As such, they could fail to detect an attack that was launched during one of these periods. The effectiveness of these types of systems also drops in switched networks that are unable to be configured to mirror traffic across other switches in the network. This consequence results from the fact that switches subdivide network traffic such that a NIDS can no longer monitor all traffic on the network because much of it is hidden behind a switches. For example, \cite{Hussain2003} encountered this problem when trying to test their IDS on the Los Nettos ISP in Las Angeles. There were only able to monitor two links at the facility because they were the only links configured to have traffic mirrored across them.  Finally, NIDSs are are unable to analyse encrypted traffic. This incapability is a major drawback, especially in this day in age, as more and more traffic is being moved to encrypted channels of communication. 		
     	\subsubsection{Hybrid System}
     	%Combine features of both and show a great deal of promise 
     \subsection{Event Analysis}
-   		This section will further subdivide and discuss IDSs by event analysis, which describes the method of detection used, given a particular audit source of data. These detection methods fall into two major categories: \emph{Signature Detection} and \emph{Anomaly Detection}. Signature based methods are much more common in practice, but anomaly detection is an area of much research and promise. A summary of both strategies can be found in \ref{comparison}.
+   		This section will further subdivide and discuss IDSs by event analysis, which describes the method of detection used, given a particular audit source of data. These detection methods fall into two major categories: \emph{Signature Detection} and \emph{Anomaly Detection}. Signature based methods are much more common in practice, but anomaly detection is an area of much research and promise. A summary of both strategies can be found in figure \ref{comparison}.
    		% Need some citations if we are to claim that signature based methods are more common (like simply typing "E.G." and then giving citations to a bunch of papers describing signature based methods being common).
    		%\ref{comparison} does what, exactly? There's just a 2 there and it is unclear what it is referring to...
 	    \subsubsection{Signature Detection} 
@@ -95,7 +96,7 @@ Jacob Fuhrman
     		The other main problem with these systems is that their functionality is predicated on having an effective system profile, which is by no means trivial to produce. They require extensive training sets to learn from, of which few exist. In practice, these types of systems produce large numbers of false positives that require manual inspection to effectively classify as an attack or not. For this reason, few existing systems use this type of detection. Instead IDSs using this type of detection mechanism are more an an open area of research than production level systems. 
     	\begin{figure}[h!]
 			\centering
-			\includegraphics[width=0.5\textwidth]{signatreVSanomaly.png}
+			\includegraphics[width=.5\textwidth]{signatreVSanomaly.png}
 			\caption{Summary of Event Analysis systems. Image taken from \cite{Alenezi2012}}
 			\label{comparison}
 	\end{figure}
@@ -109,7 +110,7 @@ Jacob Fuhrman
 	 This section is will discuss various approaches to detecting Probe attacks. Probes have been classified as any passive information gathering intrusion. The most common form of probe attack, one which will be discussed at length, is the port scan. The motivation for detecting these types of scans is that any intelligent attacker wishing to launch a successful attack will gather background information about the victims system before launching his or her attack. Their primary means of gathering information is by first launching a port scan.
 	 
 	 There are 65,536 standardly defined ports on a given machine. These are broken down into three large categories: \emph{a.} Well-known ports(0-1,023), \emph{b.}Registered ports (1,024-49,151), \emph{c.} Dynamic and/or private ports (49,152-65,536) [Matiti, P Lecture notes from Surveying Port Scans Methodologies]. %TODO Cite this!
-Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful \cite{SilenokElena;RoedelChris;Silenok}. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. There is research into detecting both types of scans, with more dedicated to detecting distributed source scans because they are easier to obfuscate and thus harder to detect. Within these high-level categories, \cite{Staniford2002} further divides each of these categories into horizantal, vertical, stobe, and block scans based on the number of machines and ports scanned. A summary of these categories can be found in \ref{portScans}.
+Essentially, a port scan consists of sending a message to each of these ports and analyzing the response message to gain information about what services the victim machine is running. For this reason, TCP ports are the most often scanned because TCP is a connection-oriented protocol, meaning that its response messages are more useful \cite{SilenokElena;RoedelChris;Silenok}. Added to this, it is easy to block/detect UDP traffic at the firewall level \cite{Bhuyan2011}. In general, like most attacks, port scans can be broken down into to high level categories: single source, and distributed source. There is research into detecting both types of scans, with more dedicated to detecting distributed source scans because they are easier to obfuscate and thus harder to detect. Within these high-level categories, \cite{Staniford2002} further divides each of these categories into horizantal, vertical, stobe, and block scans based on the number of machines and ports scanned. A summary of these categories can be found in figure \ref{portScans}.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.45\textwidth]{portScans.png}
@@ -150,8 +151,31 @@ Essentially, a port scan consists of sending a message to each of these ports an
      \subsubsection{Detection}
      	Currently, research on detection of Privilege Escalation attacks is fairly rudimentary. Such attacks are often readily recognizable to signature-based IDSs, regardless of whether they lie on the network or the host. As was briefly mentioned in our explanation of signature-based IDSs, \cite{Labs1999} shows, through copious examples of attacks, what a signature for each would have to include (though it is worth noting, such attacks are from the late 90's, and are thus quite out of date as examples). However, the details of how an anomaly based IDS would detect such attacks is not touched upon. With the massive variety of approaches attackers have found to escalate their privileges, one could surmise that anomaly based methods of detection would prove ineffective. Moreover, general research on detection of Privilege Escalation attacks is basically non-existent. That, or obscure enough to locate that, as of yet, I have not found papers on it. To summarize, much research at this juncture is focused on intrusion \emph{prevention} instead of detection, which revolves around building a more robust and secure network and system. In the course of my research, I could not find any papers categorizing Privilege Escalation attacks into types, nor any papers discussing how to formally recognize them and detect them. For more detailed analysis of the issues with research on this specific aspect of intrusion detection, see our discussion section.
      
-     
     \subsection{Denial of Service}
+    	This section will discuss the current detection methodologies for Denial of Service (DoS) attacks. It will begin with a discussion about prominent types of attacks and how they are carried out. Then, it will move into a summary of various researchers' work on detecting these very difficult to detect attacks. %TODO make sure that you keep this paragraph true to how you actually write this section
+    	
+    	We classify DoS attacks as any attack that's goal is to tie up a resource on the victims machine. The types of attacks can be broadly classified as \emph{software exploits} and \emph{flood attacks.} This section will focus on flood attacks because the majority of software exploit attacks can be solved by keeping one's system up to date with all software patches \cite{Hussain2003}. 
+    	
+    	One of the open problems in studying this type of attack is that there is no standard taxonomy describing the breakdown of the various types. Here, we present Specht and Lee's taxonomy for classifying attacks because we felt that it was the most complete and easy to understand. The following descriptions where originally described by them in \cite{Specht2004} a summary of which can be found in figure \ref{breakdown2}. 
+    		\subsubsection{Flood Attacks}
+    		Flood attacks are characterized by compromised systems (zombies) sending large amounts of network traffic to a victim machine. This overload of traffic causes the victim's system to slow down to an unusable level or crash entirely. The most commonly used protocols for this type of attack are UDP and ICMP. In a UDP flood attack, large amounts of UDP packets are sent to either random or sometimes specific ports on the victims machine. The victim machine tries to determine which application is requesting connections and thus ties up all its resources. 
+    		
+    		During and ICMP attack, zombies send large amounts of ICMP ECHO REPLY packets to the victim machine. The victim's system then tries to reply to all of the incoming traffic, but can not handle the load and crashes. It is worth noting that both of these types of attacks can be avoided with proper network configuration. For example, blocking UDP traffic or not reply to ping messages in the default manner.
+    		\subsubsection{Amplification Attacks}
+    		An amplification attack is carried out by sending a message to the broadcast address withing a network, and spoofing the return address to that of the victims machine. Other author's have termed this type of attack a \emph{reflector attack} \cite{Hussain2003}. Two common examples of this type of attack are the \emph{smurf} and \emph{Fraggle} attack. 
+    		
+    		During a smurf attack, ICMP ECHO REPLY packets are sent to a network amplifier with a spoofed return address. During a fraggle attack, UDP ECHO packets are sent to a network amplifier and the victim's echo port and character generation port are spoofed as return the address. This causes the the victim's system to enter and infinite loop where the character generation port sends packets to the echo port and so on and so forth.
+    		\subsubsection{Protocol Exploit Attacks}
+    		
+    		\subsubsection{Malformed Packet Attacks}
+    		\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.5\textwidth]{doSBreakdown.png}
+				\caption{A breakdown of different types of DoS attacks \cite{Specht2004}}
+				\label{breakdown2}
+ 			\end{figure}
+
+    		
 
 \section{Methods}
     % This is where we should talk about why we broke attacks up the way that we 
@@ -164,7 +188,13 @@ Essentially, a port scan consists of sending a message to each of these ports an
 \section{Discussion}
     % What would we say here?
     \subsection{Training Sets}
+    	In the course of our research, there were several points where we discovered current work in the field is underdeveloped, heavily criticized, or lacking in some way. Training sets of network traffic for IDSs was one of the largest sections of our research where we discovered this, as we learned that there is essentially only one training set that is moderately successful in gauging the efficacy of an IDS (the 1999 DARPA training set), and it is heavily criticized nonetheless. 
     	
+    	Brugger et al. \cite{Brugger2007} perform a survey of authors critiquing the DARPA evaluation, who describe the flaws in the training set from a variety of angles. One of the biggest criticisms of the training set (McHugh via Brugger et al. \cite{Brugger2007}) is that it did not accurately model/simulate a real-world network. This is quite poignant, as a realistic simulation of a real-world network is absolutely crucial if one's intent is to gauge how effective a given IDS would be at detecting attacks in a real-world scenario. Naturally, this is difficult to do effectively, as it begs the question: what makes a given simulation of network traffic ``realistic"? Human users are unpredictable, and in all likelihood, any network with actual users on it may look widely different from one day to the next. How does one account for these differences when artificially creating network traffic full of attacks to gauge the efficacy of an IDS on? 
+    	
+    	Realistic simulation of network traffic is a large enough critique on its own to render the DARPA dataset inadmissible as a standard gauge for IDS efficacy, but that is only one of many ``flaws" contained in the set, according to Brugger et al. Brugger et al. surveyed authors and found critiques like the one seen above, but they also tested the dataset themselves against Snort, one of the most widely recognized ``off-the-shelf" IDSs. Their reason for choosing Snort in particular was both because of how recognized it was, but also because Brugger et al. believed the dataset would prove to be ill-equipped for gauging the efficacy of a signature-based system, which Snort is also known for. Brugger et al. were correct in this assumption, as, over the course of their research, they discovered that ``...the dataset only includes a very limited number of attacks that are detectable with a fixed signature" \cite{Brugger2007}. 
+    	
+    	Thus the DARPA dataset has been demonstrated as both ineffective at simulating network traffic and at testing signature-based IDSs like Snort, which are some of the most commonly used IDSs today. 
     \subsection{Effective Defense}
     \subsection{Open Problems}
     \subsection{Categorizing Attacks} %We could make this part of open problems, if we wish.
