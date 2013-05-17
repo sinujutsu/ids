@@ -33,7 +33,6 @@ Jacob Fuhrman
 % WHEN WE ARE DONE! 
 
 \begin{abstract}
-%There was a nice paragraph here, where did it go? It was in the PDF, and not the .tex document....
 	This paper provides an introduction to the basic workings of Intrusion Detection Systems and some of the attacks they attempt to detect. Research in intrusion detection is complex, to the extent that there is no existing paper summarizing the field and its work in terms anyone \emph{without} a background in intrusion detection can understand. Therefore, this paper seeks to provide that summary to the introductory intrusion detection student or specialist, who wishes to get a brief knowledge of the general complexities of intrusion detection systems as a whole without piecing together the information in small, context-less sections from dozens of related papers.
 \end{abstract}
 
@@ -100,11 +99,11 @@ Jacob Fuhrman
 			\caption{Summary of Event Analysis systems. Image taken from \cite{Alenezi2012}}
 			\label{comparison}
 	\end{figure}
-\section{Related Work}
+\section{Attack Detection by Type}
     % I think we want to model this section after [Bhuyan, Bhattacharyya, Kalitan]
     % Their paper is in the probes section of Mendeley,you should go check it out
     %XXX: NEED MORE IN THIS SECTION
-    In this section we present our categories of attack summarize multiple authors approaches to detecting attacks within those categories.
+    In this section, we present informal categories of attack we have defined, and how an IDS might identify attacks from this category, in the hopes that some examples might illustrate the inner workings of this complex system with more ease. summarize multiple authors approaches to detecting attacks within those categories.
     
     \subsection{Probes}
 	 This section is will discuss various approaches to detecting Probe attacks. Probes have been classified as any passive information gathering intrusion. The most common form of probe attack, one which will be discussed at length, is the port scan. The motivation for detecting these types of scans is that any intelligent attacker wishing to launch a successful attack will gather background information about the victims system before launching his or her attack. Their primary means of gathering information is by first launching a port scan.
@@ -165,6 +164,7 @@ Essentially, a port scan consists of sending a message to each of these ports an
 \section{Discussion}
     % What would we say here?
     \subsection{Training Sets}
+    	
     \subsection{Effective Defense}
     \subsection{Open Problems}
     \subsection{Categorizing Attacks} %We could make this part of open problems, if we wish.
